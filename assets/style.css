@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1600px;
+    height: 100vh;
+    display: flex;
+    padding: 30px;
+    .order-list {
+        width: 50%;
+        height: auto;
+        border-right: 1px solid black;
+        .order-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            button {
+                width: 228px;
+                height: 50px;
+                font-size: 33px;
+                background-color: cyan;
+                border-radius: 25px;
+
+                &:hover {
+                    background-color: darkblue;
+                    color: white;
+                }
+                &:active {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .cart {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        .cart-list {
+            font-size: 30px;
+        }
+    }
+}
